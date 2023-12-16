@@ -1,15 +1,13 @@
 * {
-     background-color: #F8F8F5;
+    background-color: #F8F8F5;
     padding: 0px;
     margin: 0px;
 }
-
-.container {
-    height: 1000px;
-    width: 100%;
-
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-
 .header {
     display: flex;
     flex-direction: row;
@@ -20,7 +18,6 @@
     font-weight: 400;
     line-height: 117.6px;
     height: 89px;
-
 }
 
 #circle {
@@ -30,27 +27,32 @@
     background-color: #E84848;
     margin-left: 7px;
     margin-right: 7px;
+}
 
+#circle2 {
+    height: 8.3px;
+    width: 8.3px;
+    border-radius: 50%;
+    background-color: #E84848;
+    margin-left: 7px;
+    margin-right: 7px;
 }
 
 #line-div {
     margin-top: 32px;
-    border: 1px solid black;
+    border: 1px solid #3C3030;
     border-left: none;
     border-right: none;
     height: 3px;
     width: 100%;
 }
-
-#main {
+#single-line-div {
+    margin-top: 20px;
+    border: 1px solid #3C3030;
+    border-left: none;
+    border-right: none;
     width: 100%;
-    height: 900px;
-    margin-top: 5px;
-    display: flex;
-    flex-direction: column;
-
 }
-
 .input-div-container {
     margin: 20px;
     height: 80px;
@@ -58,24 +60,23 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-
 }
 
-#input{
+#input {
     height: 60px;
     border: 1px solid #3C3030;
     width: 276px;
     opacity: 30%;
-    color:  #3C3030;
-    padding-left:30px ;
-    
+    color: #3C3030;
+    padding-left: 30px;
 }
-.icon{
+
+.icon {
     position: relative;
     top: 3px;
     left: 30px;
 }
-#search{
+#search {
     height: 61px;
     width: 61px;
     background-color: #E84848;
@@ -90,87 +91,71 @@
     line-height: 28px;
 }
 
-#show-content{
+#show-content {
     width: 60%;
-    margin: 0 auto; 
-  
-   
+    margin: 0 auto;
+    justify-content: left;
 }
-.news-header{
+.news-header {
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
     font: Inria Sans;
-    color:  #D02424;
+    color: #D02424;
 }
 #content-div {
-
     width: 100%;
-    margin: 0 auto; 
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 16px; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
     justify-content: center;
     margin-top: 15px;
-    
 }
 
 .box {
-    width: 90%; 
+    width: 90%;
     height: 388px;
-   
 }
-.image-div{
+
+.image-div {
     height: 120px;
     width: 100%;
- 
     margin-bottom: 5px;
 }
-.img{
+.img {
     height: 100%;
     width: 100%;
 }
-.news-heading{
-    
-   
-    font:  Inknut Antiqua;
+.news-heading {
+    font: Inknut Antiqua;
     size: 18px;
     font-weight: 600;
     line-height: 21.6px;
     letter-spacing: -4%;
-    color:  #3C3030;
-   
+    color: #3C3030;
 }
-.discription{
-   
+
+.discription {
     font: inter;
     font-weight: 400;
     font-size: 16px;
-    color:   #3C3030;
+    color: #3C3030;
     line-height: 22.4px;
-    Opacity:80%;
+    Opacity: 80%;
 }
-.read-more{
-   
-   
-   
-}
-.read-more{
-    color:  #3C3030;
+.read-more {
+    color: #3C3030;
     font: Inria Sans;
     font: 400;
     size: 16px;
     line-height: 22.4px;
     display: flex;
-  
-
-
 }
-#read-text{
+#read-text {
     margin-top: 5px;
 }
-#read-more-btn{
- 
+#read-more-btn {
     color: #D02424;
     font: inter;
     font: 700;
@@ -182,6 +167,42 @@
     border: none;
     margin-left: 20px;
     align-items: center;
-  
-   
+}
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+#main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+#footer {
+    flex-shrink: 0;
+    font-family: "Iowan Old Style", sans-serif;
+    font-weight: 400;
+    font-size: 15.1px;
+    line-height: 21.13px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #3C3030;
+    height: 50px;
+}
+.newsapi {
+    display: flex;
+    align-items: center;
+}
+#circle2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+}
+.footer-text {
+    margin: 0 10px;
 }

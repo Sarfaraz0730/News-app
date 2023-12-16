@@ -5,37 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News App</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mobileView.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <div class="container">
-        <div class="header"><div>NewsAPI </div><div id="circle"></div> <div>Org</div></div>
+        <div class="header">
+            <div>NewsAPI </div>
+            <div id="circle"></div>
+            <div>Org</div>
+        </div>
         <div id="line-div"></div>
         <div id="main">
             <!-- Search div -->
             <div class="input-div-container">
-                
-                <div class="icon"><span onclick="getInput()"  class="material-symbols-outlined">
+                <div class="icon"><span onclick="getInput()" class="material-symbols-outlined">
                     Search
                     </span></div>
-                <div><input  type="text" name="" id="input" placeholder="Search"></div>
-                <div><button id="search" onclick="getInput()" >GO</button></div>
+                <div><input type="text" name="" id="input" placeholder="Search"></div>
+                <div><button id="search" onclick="getInput()">GO</button></div>
             </div>
-           
-           <!--show  content -->
+           <!--show content -->
             <div id="show-content">
-               <p class="news-header"> TOP NEWS FROM INDIA</p>
-               <div id="content-div">
-                
-              
-               </div>
+                <div class="news-header">TOP NEWS FROM INDIA</div>
+                <div id="content-div">
+
+                </div>
             </div>
         </div>
 
-       
-
+        <!-- footer code -->
+        <div id="single-line-div"></div>
+        <div id="footer">
+            <div class="newsapi">NewsAPI  
+            <div id="circle2"></div>
+            <div class="newsapi">Org</div>
+        </div>
+            <div class="footer-text">is not responsible for</div>
+            <div class="footer-text">the content of external sites</div>
+        </div>
     </div>
-  
+
+    <script src="index.js"></script>
 </body>
 </html>
-<script src="index.js"></script>
