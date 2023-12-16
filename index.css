@@ -1,0 +1,147 @@
+* {
+    background-color: F8F8F5;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    height: 1000px;
+    width: 100%;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 84px;
+    color: #3C3030;
+    font-weight: 400;
+    line-height: 117.6px;
+    height: 89px;
+
+}
+
+#circle {
+    height: 60.29px;
+    width: 60.29px;
+    border-radius: 50%;
+    background-color: #E84848;
+    margin-left: 7px;
+    margin-right: 7px;
+
+}
+
+#line-div {
+    margin-top: 32px;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    height: 3px;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 900px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input-div-container {
+    margin: 20px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#input{
+    height: 60px;
+    border: 1px solid #3C3030;
+    width: 276px;
+    opacity: 30%;
+    color:  #3C3030;
+    padding-left:30px ;
+    
+}
+.icon{
+    position: relative;
+    top: 3px;
+    left: 30px;
+}
+#search{
+    height: 61px;
+    width: 61px;
+    background-color: #E84848;
+    padding: 17px, 13px, 16px, 22px;
+    color: #FDFDFA;
+    border-radius: 1px;
+    gap: 10px;
+    border: none;
+    font: Iowan Old Style;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+#show-content{
+    width: 60%;
+    margin: 0 auto; 
+    border: 1px solid blue;
+   
+}
+.news-header{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    font: Inria Sans;
+    color:  #D02424;
+}
+#content-div {
+
+    width: 100%;
+    margin: 0 auto; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    justify-content: center;
+    
+}
+
+.box {
+    width: 100%; 
+    height: 388px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.image-div{
+    height: 120px;
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+.img{
+    height: 100%;
+    width: 100%;
+}
+.news-heading{
+    height: 80px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+.discription{
+    height: 110px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+.read-more{
+    height: 50px;
+    border: 1px solid black;
+   
+}
