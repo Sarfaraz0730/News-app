@@ -31,7 +31,6 @@
     }
     #main {
         padding: 0px 0px 0px 10px;
-        border: 1px solid red;
     }
     #line-div {
         margin-top: 3px;
@@ -49,16 +48,16 @@
     }
     .input-div-container {
         height: 80px;
+        width: 364px;
         justify-content: center;
         align-items: center;
         display: flex;
         flex-direction: row;
-        padding-right: 30px;
         margin-bottom: 5px;
     }
     #input {
         height: 60px;
-        width: 303px;
+        width: 303;
         border: 1px solid #3C3030;
         width: 276px;
         opacity: 30%;

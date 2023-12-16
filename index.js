@@ -1,5 +1,5 @@
 const API_KEY = "171b35340cf7465f8fe72a5fdeac867a";
-var country ="us"
+var country ="in"
 const URL = `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${API_KEY}`;
 var search = "";
 var searchResult;
