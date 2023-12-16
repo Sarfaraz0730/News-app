@@ -1,8 +1,11 @@
-console.log("hello")
 const API_KEY = "171b35340cf7465f8fe72a5fdeac867a"
-const URL = `https://newsapi.org/v2/everything?q=india&from=2023-11-15&sortBy=publishedAt&apiKey=${API_KEY}`;
+const URL = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`;
+var search =""
+var searchResult;
+// const everything =`https://newsapi.org/v2/everything?q=bitcoin&apiKey=171b35340cf7465f8fe72a5fdeac867a`
 
 const contentDiv = document.getElementById("content-div");
+
 
 async function fetchNews(api) {
     try {
@@ -11,7 +14,7 @@ async function fetchNews(api) {
         console.log("data", data.articles);
 
         data.articles.forEach((item, i) => {
-            console.log("item.des", item.description)
+          
             const truncatedDescription = item.description.length > 250
             ? item.description.slice(0, 100) + '...' 
             : item.description;
@@ -42,5 +45,22 @@ async function fetchNews(api) {
         console.log("ERROR : ", err)
     }
 }
+function getInput(){
+    var inputValue = document.getElementById('input').value;
+    search +=inputValue
 
-fetchNews(URL);
+ searchResult =`https://newsapi.org/v2/everything?q=${search}&apiKey=171b35340cf7465f8fe72a5fdeac867a`;
+// fetchNews(searchResult)
+console.log("searchResult",searchResult)
+if(search ==""){
+    fetchNews(URL);
+}else{
+    fetchNews(searchResult)
+}
+
+
+
+
+}
+
+
