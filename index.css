@@ -55,7 +55,7 @@ body {
     width: 100%;
 }
 .input-div-container {
-    margin: 20px;
+    margin-top: 20px;
     height: 80px;
     justify-content: center;
     align-items: center;
@@ -109,14 +109,15 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    gap: 8px;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 0px;
 }
 
 .box {
     width: 90%;
-    height: 388px;
+    height: 360px;
+    border: 1px solid white;
 }
 
 .image-div {

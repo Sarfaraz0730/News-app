@@ -1,8 +1,6 @@
 const API_KEY = "171b35340cf7465f8fe72a5fdeac867a";
 var country ="in"
-const PROXY_URL = "https://cors-anywhere.herokuapp.com/";
-const URL = `${PROXY_URL}https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${API_KEY}`;
-
+const URL = `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${API_KEY}`;
 var search = "";
 var searchResult;
 const contentDiv = document.getElementById("content-div");

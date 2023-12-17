@@ -83,12 +83,14 @@
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 16px;
+        gap: 3px;
         justify-content: center;
-        margin-top: 15px;
+        margin-top: 0px;
     }
     .box {
-        width: 363px;
+        width: 340px;
+        height: 308px;
+        border: 1px solid white;
     }
     #search {
         height: 61px;
